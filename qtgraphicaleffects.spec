@@ -1,7 +1,7 @@
-%define _qtmodule_snapshot_version 5.0.0-beta1
+%define _qtmodule_snapshot_version 5.0.0
 Name:       qt5-qtgraphicaleffects
 Summary:    Qt Graphical Effect
-Version:    5.0.0~beta1
+Version:    5.0.0
 Release:    1%{?dist}
 Group:      Qt/Qt
 License:    LGPLv2.1 with exception or GPLv3
@@ -60,5 +60,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_libdir}/qt5/imports/QtGraphicalEffects/*
+%{_libdir}/qt5/qml/QtGraphicalEffects/*
 
