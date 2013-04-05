@@ -1,7 +1,7 @@
-%define _qtmodule_snapshot_version 5.0.0
+%define _qtmodule_snapshot_version 5.0.1
 Name:       qt5-qtgraphicaleffects
 Summary:    Qt Graphical Effect
-Version:    5.0.0
+Version:    5.0.1
 Release:    1%{?dist}
 Group:      Qt/Qt
 License:    LGPLv2.1 with exception or GPLv3
@@ -32,7 +32,7 @@ This package contains the Qt Graphical Effect library
 
 %build
 export QTDIR=/usr/share/qt5
-%qmake CONFIG+=package
+%qmake5 CONFIG+=package
 make %{?_smp_flags}
 
 %install
