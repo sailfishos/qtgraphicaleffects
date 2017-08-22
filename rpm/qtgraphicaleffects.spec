@@ -6,6 +6,7 @@ Group:      Qt/Qt
 License:    LGPLv2.1 with exception or GPLv3
 URL:        http://qt.nokia.com
 Source0:    %{name}-%{version}.tar.xz
+Patch1:     qtgraphicaleffects-5.6.2-qmldir-declare-module.patch
 BuildRequires:  qt5-qtcore-devel >= 5.6.2
 BuildRequires:  qt5-qtgui-devel >= 5.6.2
 BuildRequires:  qt5-qtopengl-devel >= 5.6.2
@@ -26,6 +27,7 @@ This package contains the Qt Graphical Effect library
 
 %prep
 %setup -q -n %{name}-%{version}/qtgraphicaleffects
+%patch1 -p1
 
 %build
 export QTDIR=/usr/share/qt5
