@@ -2,9 +2,8 @@ Name:       qt5-qtgraphicaleffects
 Summary:    Qt Graphical Effect
 Version:    5.6.2
 Release:    1%{?dist}
-Group:      Qt/Qt
-License:    LGPLv2.1 with exception or GPLv3
-URL:        http://qt.nokia.com
+License:    BSD and ((LGPLv2 or LGPLv3) with exception or Qt Commercial)
+URL:        http://www.qt.io
 Source0:    %{name}-%{version}.tar.xz
 Patch1:     qtgraphicaleffects-5.6.2-qmldir-declare-module.patch
 BuildRequires:  qt5-qtcore-devel >= 5.6.2
@@ -59,5 +58,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
+%license LICENSE.LGPLv21
+%license LICENSE.LGPLv3
+%license LGPL_EXCEPTION.txt
 %{_libdir}/qt5/qml/QtGraphicalEffects/*
 
