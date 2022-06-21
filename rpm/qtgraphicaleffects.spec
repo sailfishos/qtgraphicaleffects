@@ -3,7 +3,7 @@ Summary:    Qt Graphical Effect
 Version:    5.6.2
 Release:    1%{?dist}
 License:    BSD and ((LGPLv2 or LGPLv3) with exception or Qt Commercial)
-URL:        http://www.qt.io
+URL:        https://github.com/sailfishos/qtgraphicaleffects
 Source0:    %{name}-%{version}.tar.xz
 Patch1:     qtgraphicaleffects-5.6.2-qmldir-declare-module.patch
 BuildRequires:  qt5-qtcore-devel >= 5.6.2
